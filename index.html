@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Landing Page</title>
-    <link rel="shortcut icon" href="https://stockadvisory.site/assets/img/favicon.ico">
-
-    <!-- Font Awesome for Icons -->
+    <title>🔥 Ultra Stylish Website 🔥</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <script>
@@ -17,70 +14,65 @@
     </script>
 
     <style>
-        /* Full Page Background with Blur Effect */
+        /* 🔥 Background with Parallax Effect */
         body {
-            background-image: url('https://i.ibb.co/KxxPHXQc/134.jpg');
+            background: url('https://i.ibb.co/KxxPHXQc/134.jpg') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
         }
 
-        /* Glassmorphism Box */
+        /* 🔥 Glassmorphism Box */
         .glass-box {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
             border-radius: 15px;
-            padding: 30px;
+            padding: 40px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
             max-width: 90%;
             width: 400px;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
-        /* Heading Styling */
+        /* 🔥 Heading Styling */
         h1 {
             font-size: 28px;
-            color: white;
+            color: #ffffff;
             margin-bottom: 15px;
+            text-shadow: 0 0 10px #00f2ff;
         }
 
-        /* Join Now Button */
+        /* 🔥 Neon Button */
         .btn {
             display: inline-block;
-            background: #e71e00;
-            color: white;
+            background: #00f2ff;
+            color: black;
             padding: 15px 40px;
             font-size: 18px;
             font-weight: bold;
             border-radius: 50px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            animation: bounce 1.5s infinite;
+            transition: all 0.3s ease-in-out;
+            animation: glow 1.5s infinite alternate;
+            border: 2px solid white;
+            text-transform: uppercase;
         }
 
         .btn:hover {
-            background: #ff4500;
+            background: white;
+            color: #00f2ff;
             transform: scale(1.1);
         }
 
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-5px);
-            }
-        }
-
-        /* WhatsApp Floating Button */
+        /* 🔥 WhatsApp Floating Button */
         .whatsapp-icon {
             position: fixed;
             top: 50%;
@@ -98,7 +90,7 @@
             text-decoration: none;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            animation: glow 1.5s infinite alternate;
+            animation: bounce 1.5s infinite alternate;
         }
 
         .whatsapp-icon:hover {
@@ -106,16 +98,37 @@
             box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.8);
         }
 
+        /* 🔥 Animations */
         @keyframes glow {
             0% {
-                box-shadow: 0px 0px 10px rgba(37, 211, 102, 0.4);
+                box-shadow: 0px 0px 10px rgba(0, 242, 255, 0.4);
             }
             100% {
-                box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.8);
+                box-shadow: 0px 0px 20px rgba(0, 242, 255, 0.8);
             }
         }
 
-        /* Responsive Design */
+        @keyframes bounce {
+            0% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(5px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* 🔥 Responsive Design */
         @media (max-width: 600px) {
             .glass-box {
                 width: 90%;
@@ -139,13 +152,13 @@
 
 <body>
 
-    <!-- Glassmorphism Box -->
+    <!-- 🔥 Glassmorphism Box -->
     <div class="glass-box">
-        <h1>Welcome to Our Site</h1>
+        <h1>Welcome to the Future 🚀</h1>
         <a href="javascript:jump()" class="btn">Join Now</a>
     </div>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- 🔥 WhatsApp Floating Button -->
     <a href="https://wa.me/your_whatsapp_number" class="whatsapp-icon" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
