@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔥 Ultra Stylish Website 🔥</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Stock Market and Financial Column</title>
+    <link rel="shortcut icon" href="https://stockadvisory.site/assets/img/favicon.ico">
+    <link href="static/css/index.css" rel="stylesheet">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="https://ff.globalgogomall.com/link?key=6552aaf41b429"></script>
 
     <script>
         function jump() {
@@ -14,155 +18,90 @@
     </script>
 
     <style>
-        /* 🔥 Background with Parallax Effect */
+        /* Background Image */
         body {
-            background: url('https://i.ibb.co/KxxPHXQc/134.jpg') no-repeat center center fixed;
+            background-image: url('https://i.ibb.co/KxxPHXQc/134.jpg');
             background-size: cover;
-            font-family: 'Arial', sans-serif;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            justify-content: flex-end; /* Join Now Button को नीचे सेट करने के लिए */
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            color: white;
+        }
+
+        /* Join Now Button */
+        .btn11 {
+            position: fixed;
+            bottom: 20px; /* अब पूरी तरह से नीचे */
+            left: 50%;
+            transform: translateX(-50%);
             text-align: center;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.50);
+            padding: 10px;
+            border-radius: 10px;
         }
 
-        /* 🔥 Glassmorphism Box */
-        .glass-box {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border-radius: 15px;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-            max-width: 90%;
-            width: 400px;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        /* 🔥 Heading Styling */
-        h1 {
-            font-size: 28px;
-            color: #ffffff;
-            margin-bottom: 15px;
-            text-shadow: 0 0 10px #00f2ff;
-        }
-
-        /* 🔥 Neon Button */
-        .btn {
+        .btn11 a {
             display: inline-block;
-            background: #00f2ff;
-            color: black;
-            padding: 15px 40px;
-            font-size: 18px;
+            text-align: center;
+            font-size: 20px;
             font-weight: bold;
+            background: #e71e00;
+            color: #ffffff;
+            padding: 15px 40px;
+            margin: 6px 0;
             border-radius: 50px;
             text-decoration: none;
-            transition: all 0.3s ease-in-out;
-            animation: glow 1.5s infinite alternate;
-            border: 2px solid white;
-            text-transform: uppercase;
+            animation: switch 1.5s ease-out infinite;
         }
 
-        .btn:hover {
-            background: white;
-            color: #00f2ff;
-            transform: scale(1.1);
+        @keyframes switch {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.8); }
+            100% { transform: scale(1); }
         }
 
-        /* 🔥 WhatsApp Floating Button */
+        /* WhatsApp Icon */
         .whatsapp-icon {
             position: fixed;
-            top: 50%;
             right: 20px;
+            top: 50%;
             transform: translateY(-50%);
-            width: 65px;
-            height: 65px;
-            background-color: #25D366;
-            color: white;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
+            background: url('static/picture/whatsapp.png') no-repeat center;
+            background-size: cover;
+            border: 2px solid #50cd5e;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
-            text-decoration: none;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            animation: bounce 1.5s infinite alternate;
         }
 
-        .whatsapp-icon:hover {
-            transform: scale(1.2);
-            box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.8);
-        }
-
-        /* 🔥 Animations */
-        @keyframes glow {
-            0% {
-                box-shadow: 0px 0px 10px rgba(0, 242, 255, 0.4);
-            }
-            100% {
-                box-shadow: 0px 0px 20px rgba(0, 242, 255, 0.8);
-            }
-        }
-
-        @keyframes bounce {
-            0% {
-                transform: translateY(-5px);
-            }
-            100% {
-                transform: translateY(5px);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        /* 🔥 Responsive Design */
-        @media (max-width: 600px) {
-            .glass-box {
-                width: 90%;
-                padding: 20px;
-            }
-
-            .btn {
-                padding: 12px 30px;
-                font-size: 16px;
-            }
-
-            .whatsapp-icon {
-                width: 55px;
-                height: 55px;
-                font-size: 24px;
-            }
+        .whatsapp-icon a {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
     </style>
-
 </head>
 
 <body>
 
-    <!-- 🔥 Glassmorphism Box -->
-    <div class="glass-box">
-        <h1>Welcome to the Future 🚀</h1>
-        <a href="javascript:jump()" class="btn">Join Now</a>
+    <!-- Join Now Button -->
+    <div class="btn11">
+        <a onclick="jump()">Join Now</a>
     </div>
 
-    <!-- 🔥 WhatsApp Floating Button -->
-    <a href="https://wa.me/your_whatsapp_number" class="whatsapp-icon" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- WhatsApp Icon -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/your-number" target="_blank"></a>
+    </div>
 
 </body>
-
 </html>
